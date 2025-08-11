@@ -1,0 +1,28 @@
+---
+description: A specification for adding readable meaning to branch
+globs:
+alwaysApply: false
+---
+
+## Specification
+
+### Branch Naming Prefixes
+
+The branch specification by describing with `feature/`, `bugfix/`, `hotfix/`, `release/` and `chore/` and it should be structured as follows:
+
+```
+<type>/<description>
+```
+
+- main: The main development branch (e.g., `main`, `master`, or `develop`)
+- feature/: For new features (e.g., `feature/add-login-page`)
+- bugfix/: For bug fixes (e.g., `bugfix/fix-header-bug`)
+- hotfix/: For urgent fixes (e.g., `hotfix/security-patch`)
+- release/: For branches preparing a release (e.g., `release/v1.2.0`)
+- chore/: For non-code tasks like dependency, docs updates (e.g., `chore/update-dependencies`)
+
+### Basic Rules
+
+1. **Use Lowercase Alphanumerics, Hyphens, and Dots**: Always use lowercase letters (`a-z`), numbers (`0-9`), and hyphens(`-`) to separate words. Avoid special characters, underscores, or spaces. For release branches, dots (`.`) may be used in the description to represent version numbers (e.g., `release/v1.2.0`).
+2. **No Consecutive, Leading, or Trailing Hyphens or Dots**: Ensure that hyphens and dots do not appear consecutively (e.g., `feature/new--login`, `release/v1.-2.0`), nor at the start or end of the description (e.g., `feature/-new-login`, `release/v1.2.0.`).
+3. **Keep It Clear and Concise**: The branch name should be descriptive yet concise, clearly indicating the purpose of the work.
