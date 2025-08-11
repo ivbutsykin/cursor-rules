@@ -1,5 +1,5 @@
 ---
-description: A specification for adding readable meaning to branch
+description: A specification for adding readable meaning to branch names
 globs:
 alwaysApply: false
 ---
