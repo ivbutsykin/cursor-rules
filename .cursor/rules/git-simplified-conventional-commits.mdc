@@ -1,5 +1,5 @@
 ---
-description: A specification for adding readable meaning to commit messages.
+description: A specification for adding readable meaning to commit messages
 globs:
 alwaysApply: false
 ---
